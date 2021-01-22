@@ -1,0 +1,60 @@
+1 – Orthogonal : Écrire un algorithme qui détermine si deux vecteurs à deux dimensions sont orthogonaux ou
+non. Note : utiliser un produit scalaire ; les opérations sur les vecteurs, dont le produit scalaire, ne sont pas
+des opérations élémentaires disponibles pour l’algorithme raffiné.
+Exemple : L’utilisateur entre les composantes des vecteurs (1 ; 0,5) et ( -1 ; 2 )
+L'affichage attendu est : Les vecteurs sont orthogonaux.
+
+
+
+
+
+2 – Pythagore. L’algorithme devra demander et lire 3 nombres. Ensuite, il vérifiera si ces 3 nombres
+satisfont le théorème de Pythagore, i.e. que le 3e
+ nombre est bien l’hypoténuse pour les 2 autres nombres. Si
+ce n’est pas le cas, il redemandera et relira 3 nombres jusqu’à ce que le théorème soit respecté.
+
+
+
+
+3 – Suite : Demander à l’utilisateur de saisir un entier n strictement positif (et lui redemander jusqu’à ce qu’il
+ait bien entré un nombre strictement positif, mais vous n’avez pas à vérifier que c’est un entier) puis une suite
+de n entiers. Afficher la longueur de la plus grande suite croissante.
+Exemple : Pour n=10 et la suite 10,1,3,4,5,9,5,8,2,1 le programme affiche 5.
+
+
+
+
+
+
+4 – Recherche : Écrire une fonction dont le résultat est la position où se trouve le texte « INF » dans une
+phrase qui lui est passée ; elle doit avoir le résultat -1 dans le cas où il n’y est pas. La position résultante doit
+être celle où se trouve la première lettre du « INF » dans la phrase, la position zéro étant la première lettre de
+la phrase.
+Note : chaque caractère compte comme une position, incluant les espaces et les ponctuations. La fonction
+« longueur de (phrase) » permet de connaître le nombre de caractères dans la phrase (voir exemple en p.1).
+Exemple : La phrase passée à la fonction est « J’ai un cours d’INF1005C », le résultat attendu est 16.
+
+
+
+5 – Distance à l’origine en 3D. Demander et lire plusieurs points de coordonnées (x, y , z). À chaque
+nouveau point entré, indiquer s’il est plus près de l’origine (0, 0, 0) que tous les points précédemment entrés.
+Définissez une fonction pour obtenir la distance du point à l’origine. Votre programme doit calculer une seule
+fois la distance de chaque point entré par l’usager.
+
+
+
+
+6 – Racine carrée : Écrire un algorithme pour calculer la racine carrée d’un nombre réel positif x. La
+méthode sera d’utiliser la série définie comme :
+y0 = x
+yn+1 = (yn + x / yn) / 2
+Lorsque n tend vers l’infini, cette série converge vers la racine carrée de x. L’estimation de l’erreur au terme
+yn, par rapport à la véritable racine carrée, sera en = | yn – yn-1 | (soit la valeur absolue de la différence entre
+deux termes qui se suivent dans la série). L’algorithme doit arrêter, et afficher la valeur de yn, dès que cette
+erreur estimée est inférieure à epsilon.
+Note : la valeur absolue n’est pas une opération élémentaire disponible pour l’algorithme raffiné.
+Exemple : L’utilisateur entre les valeurs de x et epsilon comme étant 2 et 0,01.
+L’affichage attendu est : La racine de 2 est approximativement 1,414215686.
+Dans cet exemple, les valeurs des y sont : y0 = 2 ; y1 = 1,5 ; y2 = 1,41666666 ; y3 = 1,414215686. La différence
+entre y3 et y2 est de ~0,002, qui est inférieur au epsilon de 0,01, d’où l’affichage de la valeur de y3 comme
+approximation acceptée de la racine de 2. 
