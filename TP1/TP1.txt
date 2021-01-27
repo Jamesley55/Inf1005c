@@ -5,6 +5,37 @@ Exemple : L’utilisateur entre les composantes des vecteurs (1 ; 0,5) et ( -1 ;
 L'affichage attendu est : Les vecteurs sont orthogonaux.
 
 
+a)
+Demander les deux veceurs à l'usager. Lire les composantes des deux vecteurs.
+Si le produit scalaire est nul, afficher que les deux vecteurs sont orthogonaux, sinon ils ne le sont pas.
+
+
+
+b) 
+Afficher <<Veuillez entrer la coordonnées en x du premier vecteur>>
+Lire x
+a = x
+Afficher <<Veuillez entrer les coordonnées en y du premier vecteur>>
+Lire y 
+b = y 
+Vect1=(a,b)
+Afficher <<Veuillez entrer la coordonnées en x du second vecteur>>
+Lire x 
+c = x
+Afficher <<Veuillez entrer la coordonnées en y du second vecteur>>
+Lire y 
+d = y
+Vect2=(c,d)
+
+Produit = (a*c) + (b*d)
+SI Produit ==  0 ALORS
+	Afficher <<Ces deux vecteurs sont orthogonaux>>
+SINON
+	Afficher <<Ces deux vecteurs ne sont pas orthogonaux>>
+
+
+
+
 
 
 
@@ -12,6 +43,35 @@ L'affichage attendu est : Les vecteurs sont orthogonaux.
 satisfont le théorème de Pythagore, i.e. que le 3e
  nombre est bien l’hypoténuse pour les 2 autres nombres. Si
 ce n’est pas le cas, il redemandera et relira 3 nombres jusqu’à ce que le théorème soit respecté.
+
+a) Demander a l'utilisateur de saisir trois nombre 
+
+
+
+b) 
+
+nombre1 = 0
+nombre2 = 0
+nombre3 = 0 
+
+TANT QUE sqrt(nombre1^2 + nombre2^2) != nombre3 Faire 
+
+    Afficher <<Veuillez saisir un premier nombre saisi1 >>
+
+    Lire saisi1
+    nombre1 = saisi1
+
+    Afficher <<Veuillez saisir un second nombre  saisi2 >>
+
+    Lire saisi2
+    nombre2 = saisi2
+
+    Afficher <<Veuillez saisir un troisieme nombre saisi3 >>
+
+    Lire saisi3
+    nombre3 = saisi3
+
+Afficher << le théorème est respecté >> 
 
 
 
@@ -21,7 +81,32 @@ ait bien entré un nombre strictement positif, mais vous n’avez pas à vérifi
 de n entiers. Afficher la longueur de la plus grande suite croissante.
 Exemple : Pour n=10 et la suite 10,1,3,4,5,9,5,8,2,1 le programme affiche 5.
 
+a)
 
+b)
+Afficher << Veuillez saisir un entier positif>>
+
+Lire nombre
+
+TANT QUE nombre < 0 FAIRE
+    Afficher << Veuillez svp entrer un entier POSITIF>>
+
+i=0
+Tableau=[]
+TANT QUE i < nombre FAIRE
+    Afficher <<Saisir un entier>>
+    Lire entier
+    Tableau[i]= entier
+    SI i >=1 FAIRE
+        SI Tableau[i]>Tableau[i-1] FAIRE
+            Longueur = Longueur + 1
+ 
+    SI Longueur > plusGrandeLongeurExistance Faire 
+        plusGrandeLongeurExistance = longueur
+
+    i=i+1
+
+Afficher plusGrandeLongeurExistance
 
 
 
@@ -32,7 +117,15 @@ phrase qui lui est passée ; elle doit avoir le résultat -1 dans le cas où il 
 la phrase.
 Note : chaque caractère compte comme une position, incluant les espaces et les ponctuations. La fonction
 « longueur de (phrase) » permet de connaître le nombre de caractères dans la phrase (voir exemple en p.1).
-Exemple : La phrase passée à la fonction est « J’ai un cours d’INF1005C », le résultat attendu est 16.
+Exemple : La phrase passée à la fonction est «J’ai un cours d’INF1005C », le résultat attendu est 16.
+
+a) 
+
+b)
+Afficher <<Saisir une phrase contenant le texte INF>>
+Lire Phrase
+FONCTION Longueur de (phrase)
+RESULTAT INF
 
 
 
@@ -41,6 +134,9 @@ nouveau point entré, indiquer s’il est plus près de l’origine (0, 0, 0) qu
 Définissez une fonction pour obtenir la distance du point à l’origine. Votre programme doit calculer une seule
 fois la distance de chaque point entré par l’usager.
 
+a)
+
+b)
 
 
 
@@ -58,3 +154,8 @@ L’affichage attendu est : La racine de 2 est approximativement 1,414215686.
 Dans cet exemple, les valeurs des y sont : y0 = 2 ; y1 = 1,5 ; y2 = 1,41666666 ; y3 = 1,414215686. La différence
 entre y3 et y2 est de ~0,002, qui est inférieur au epsilon de 0,01, d’où l’affichage de la valeur de y3 comme
 approximation acceptée de la racine de 2. 
+
+
+a)
+
+b)
