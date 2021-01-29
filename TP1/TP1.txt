@@ -44,8 +44,11 @@ satisfont le théorème de Pythagore, i.e. que le 3e
  nombre est bien l’hypoténuse pour les 2 autres nombres. Si
 ce n’est pas le cas, il redemandera et relira 3 nombres jusqu’à ce que le théorème soit respecté.
 
-a) Demander a l'utilisateur de saisir trois nombre 
-
+a) 
+Demander a l'utilisateur de saisir trois nombre 
+Lire les nombres saisis
+Comparer le carré du troisième nombre avec la somme des carrés des deux premiers 
+Afficher si la comparaison respecte le théorême de Pythagore
 
 
 b) 
@@ -54,7 +57,7 @@ nombre1 = 0
 nombre2 = 0
 nombre3 = 0 
 
-TANT QUE sqrt(nombre1^2 + nombre2^2) != nombre3 Faire 
+TANT QUE racine_carrée(nombre1^2 + nombre2^2) != nombre3 Faire 
 
     Afficher <<Veuillez saisir un premier nombre saisi1 >>
 
@@ -81,7 +84,12 @@ ait bien entré un nombre strictement positif, mais vous n’avez pas à vérifi
 de n entiers. Afficher la longueur de la plus grande suite croissante.
 Exemple : Pour n=10 et la suite 10,1,3,4,5,9,5,8,2,1 le programme affiche 5.
 
+
+
 a)
+Entrer un entier positif <<n>> indiquant le nombre d'éléments de la suite
+Lire le nombre saisi puis demander à l'utilisateur de saisir une suite d'entiers de <<n>> éléments.
+Lire la suite saisie et afficher la longueur de la plus grande suite croissante.
 
 b)
 Afficher << Veuillez saisir un entier positif>>
@@ -119,13 +127,36 @@ Note : chaque caractère compte comme une position, incluant les espaces et les 
 « longueur de (phrase) » permet de connaître le nombre de caractères dans la phrase (voir exemple en p.1).
 Exemple : La phrase passée à la fonction est «J’ai un cours d’INF1005C », le résultat attendu est 16.
 
+
+
 a) 
+Demander à l'utilisateur de saisir une phrase comprenant INF
+Lire la phrase saisie
+Rechercher le caratère I à partir duquel on trouve la chaine de caractères INF
+Indiquer la position de ce I
 
 b)
+
 Afficher <<Saisir une phrase contenant le texte INF>>
-Lire Phrase
-FONCTION Longueur de (phrase)
-RESULTAT INF
+Lire <<phrase saisie>>
+Phrase=<<phrase saisie>>
+Inf=<<INF>>
+i=0
+Position=0
+TANT QUE i<longueur_de Phrase FAIRE
+    temp=i
+    j=0
+    TANT QUE j<longueur de Inf
+        SI Inf[j]=Phrase[temp]
+            Position=Position+1
+        j=j+1
+        temp=temp+1
+    SI Position=longueur de Inf
+        Afficher i
+        Afficher <<Voilà>>
+    SINON
+        Position=0
+    i=i+1
 
 
 
@@ -135,8 +166,16 @@ Définissez une fonction pour obtenir la distance du point à l’origine. Votre
 fois la distance de chaque point entré par l’usager.
 
 a)
+Demander à l'usager de saisir les coordonnées d'un point
+Lire les coordonnées entrées
+Comparer la position du dernier point saisi aux précédentes
+Indiquer la position relative du dernier point entré
 
 b)
+
+
+
+
 
 
 
@@ -156,6 +195,9 @@ entre y3 et y2 est de ~0,002, qui est inférieur au epsilon de 0,01, d’où l�
 approximation acceptée de la racine de 2. 
 
 
+
+
 a)
+
 
 b)
