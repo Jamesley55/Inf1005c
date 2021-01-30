@@ -166,12 +166,39 @@ Définissez une fonction pour obtenir la distance du point à l’origine. Votre
 fois la distance de chaque point entré par l’usager.
 
 a)
-Demander à l'usager de saisir les coordonnées d'un point
+Demander à l'usager de saisir les coordonnées d'un nombre n de points
 Lire les coordonnées entrées
 Comparer la position du dernier point saisi aux précédentes
 Indiquer la position relative du dernier point entré
 
 b)
+Afficher << Saisir un entier qui définit le nombre maximal de points à comparer>>
+Lire n
+max_pts=n
+Aficher <<Veuillez entrer les coordonnées d'un point>>
+Lire (x,y,z)
+i=0
+Distance=0
+Proximité=0
+j=i+1
+Vect[j]=(x,y,z)
+FONCTION mod_vect(x,y,z)
+    RESULTAT racine_carrée(x*x+y*y+z*z)
+    Distance = racine_carrée(x*x+y*y+z*z)
+    Afficher <<La distance de ce point à l'origine est: &Distance>>
+    i=i+1
+    Proximité=Distance
+TANT QUE i<n-1 FAIRE
+    Afficher <<Veuillez entrer les coordonnées d'un autre point>>
+    Lire (x,y,z)
+    FONCTION mod_vect(x,y,z)
+        RESULTAT racine_carrée(x*x+y*y+z*z)
+        Distance = racine_carrée(x*x+y*y+z*z)
+    SI Distance < Proximité ALORS
+        Afficher <<Ce point est plus proche de l'origine>>
+        Proximité=Distance
+    SINON i=i+1
+
 
 
 
@@ -198,6 +225,23 @@ approximation acceptée de la racine de 2.
 
 
 a)
-
+Demander à l'utilisateur de saisir un réel positif.
+Lire la valeur du réel saisi.
+Calculer la valeur de la série avec ce réel pour paramètre en applicant l'estimation de l'erreur à l'infini.
+Afficher la valeur de la série pour ce réel
 
 b)
+Afficher <<Entrez un réel positif x>>
+Lire x
+y0=x
+i=1
+FONCTION f(y)
+    RESULTAT (y+x/y)/2
+e=1
+TANT QUE (e > 0.01) FAIRE
+    racine=f(i)
+    SI (racine>i) ALORS
+        e=racine-i
+    SINON e=i-racine
+    i=racine
+Afficher << La racine carré de x est: &i>>
