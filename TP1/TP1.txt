@@ -98,9 +98,11 @@ Lire nombre
 
 TANT QUE nombre < 0 FAIRE
     Afficher << Veuillez svp entrer un entier POSITIF>>
+    Lire nombre
+
 
 i=0
-Tableau=[]
+Tableau = tableau de nombre
 TANT QUE i < nombre FAIRE
     Afficher <<Saisir un entier>>
     Lire entier
@@ -166,40 +168,46 @@ Définissez une fonction pour obtenir la distance du point à l’origine. Votre
 fois la distance de chaque point entré par l’usager.
 
 a)
-Demander à l'usager de saisir les coordonnées d'un nombre n de points
+Demander a l'utilisateur d'entree un coorodner d'un vecteur en trois dimensions
 Lire les coordonnées entrées
-Comparer la position du dernier point saisi aux précédentes
-Indiquer la position relative du dernier point entré
+storer en tout temps le le point le plus proche de l'origine
+Demander a l'utilisateur d'entree un second coorodner d'un vecteur en trois dimensions
+Comparer le point le plus proche du de l'rogine au dernier  point saisi par l'utilisateur
+si le dernier point saisi est plus petit que le point le plus proche alors on Affiche qu'il est plus proche de l'origine que tout les autres point
+dans ce cas le derniere point saisi par l'utilisateur serais le point le plus proche de l'origine
+l'utilisateur continue a ajouter des point tant qu'on n'arrive pas a l'origine
 
 b)
-Afficher << Saisir un entier qui définit le nombre maximal de points à comparer>>
-Lire n
-max_pts=n
-Aficher <<Veuillez entrer les coordonnées d'un point>>
-Lire (x,y,z)
-i=0
-Distance=0
-Proximité=0
-j=i+1
-Vect[j]=(x,y,z)
+
 FONCTION mod_vect(x,y,z)
-    RESULTAT racine_carrée(x*x+y*y+z*z)
-    Distance = racine_carrée(x*x+y*y+z*z)
-    Afficher <<La distance de ce point à l'origine est: &Distance>>
-    i=i+1
-    Proximité=Distance
-TANT QUE i<n-1 FAIRE
+    Distance = racine_carrée(x*x + y*y + z*z)
+    Afficher <<La distance de ce point à l'origine est: >>
+    Afficher Distance
+    RESULTAT Distance
+
+
+
+Afficher << Veuillez entrer un point en x : >>
+Lire x
+Afficher << Veuillez entrer un point en y :>>
+Lire y
+Afficher <<Veuillez entrer un point en z : >>
+Lire z 
+plus_proche_de_lorigine = mod_vect(x,y,z)
+TANT QUE plus_proche_de_lorigine != 0 FAIRE
     Afficher <<Veuillez entrer les coordonnées d'un autre point>>
-    Lire (x,y,z)
-    FONCTION mod_vect(x,y,z)
-        RESULTAT racine_carrée(x*x+y*y+z*z)
-        Distance = racine_carrée(x*x+y*y+z*z)
-    SI Distance < Proximité ALORS
-        Afficher <<Ce point est plus proche de l'origine>>
-        Proximité=Distance
-    SINON i=i+1
+    Afficher << Veuillez entrer un point en x : >>
+    Lire x
+    Afficher << Veuillez entrer un point en y :>>
+    Lire y
+    Afficher <<Veuillez entrer un point en z : >>
+    Lire z 
+    dist_nouveau_point = mod_vect(x,y,z)
+    SI  dist_nouveau_point < plus_proche_de_lorigine ALORS
+        Afficher <<Ce point est plus proche de l'ogine que les points precedent>>
+        plus_proche_de_lorigine=dist_nouveau_point
 
-
+Afficher << vous avez trouvez le point le plus proche de l'origine >> 
 
 
 
@@ -231,17 +239,21 @@ Calculer la valeur de la série avec ce réel pour paramètre en applicant l'est
 Afficher la valeur de la série pour ce réel
 
 b)
+FONCTION f(y,x)
+    RESULTAT (y+x/y)/2 
+
 Afficher <<Entrez un réel positif x>>
 Lire x
 y0=x
 i=1
-FONCTION f(y)
-    RESULTAT (y+x/y)/2
+
 e=1
 TANT QUE (e > 0.01) FAIRE
-    racine=f(i)
+    racine=f(i,x)
     SI (racine>i) ALORS
         e=racine-i
-    SINON e=i-racine
+    SINON 
+        e=i-racine
     i=racine
-Afficher << La racine carré de x est: &i>>
+Afficher << La racine carré de x est: >>
+Afficher i 
