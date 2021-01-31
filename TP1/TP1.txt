@@ -39,6 +39,7 @@ SINON
 
 
 
+
 2 – Pythagore. L’algorithme devra demander et lire 3 nombres. Ensuite, il vérifiera si ces 3 nombres
 satisfont le théorème de Pythagore, i.e. que le 3e
  nombre est bien l’hypoténuse pour les 2 autres nombres. Si
@@ -75,6 +76,12 @@ TANT QUE racine_carrée(nombre1^2 + nombre2^2) != nombre3 Faire
     nombre3 = saisi3
 
 Afficher << le théorème est respecté >> 
+
+
+
+
+
+
 
 
 
@@ -121,6 +128,12 @@ Afficher plusGrandeLongeurExistance
 
 
 
+
+
+
+
+
+
 4 – Recherche : Écrire une fonction dont le résultat est la position où se trouve le texte « INF » dans une
 phrase qui lui est passée ; elle doit avoir le résultat -1 dans le cas où il n’y est pas. La position résultante doit
 être celle où se trouve la première lettre du « INF » dans la phrase, la position zéro étant la première lettre de
@@ -159,6 +172,12 @@ TANT QUE i<longueur_de Phrase FAIRE
     SINON
         Position=0
     i=i+1
+
+
+
+
+
+
 
 
 
