@@ -1,0 +1,6 @@
+Mr Punchy
+LVL 50
+ATK 185
+
+Strength 80
+Earthquake 100
