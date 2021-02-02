@@ -1,12 +1,12 @@
 #include <iostream>
-#include "Exo1.h"
+#include "Declaration.h"
 
 #if false
 // Exercise 1 
 // mettre a true si tu veut run cette Exercise sinon mettre a false
 int main(int argc, char *argv[])
 {
-	myfunc();
+	Exo1();
 }
 
 #endif
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 // mettre a true si tu veut run cette Exercise sinon mettre a false
 int main(int argc, char *argv[])
 {
-	myfunc2();
+	Exo2();
 }
 
 #endif
@@ -28,18 +28,18 @@ int main(int argc, char *argv[])
 // mettre a true si tu veut run cette Exercise sinon mettre a false
 int main(int argc, char *argv[])
 {
-	std::cout << "Hello world!" << std::endl;
+	Exo3();
 }
 
 #endif
 
 
-#if false
+#if true
 // Exercise 4
 // mettre a true si tu veut run cette Exercise sinon mettre a false
 int main(int argc, char *argv[])
 {
-	std::cout << "Hello world!" << std::endl;
+	Exo4();
 }
 
 #endif
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 // mettre a true si tu veut run cette Exercise sinon mettre a false
 int main(int argc, char *argv[])
 {
-	std::cout << "Hello world!" << std::endl;
+	Exo5();
 }
 
 #endif
