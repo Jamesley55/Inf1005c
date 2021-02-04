@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Declaration.h"
 
-#if true
+#if false
 // Exercise 1 
 // mettre a true si tu veut run cette Exercise sinon mettre a false
 int main(int argc, char *argv[])
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 #endif
 
 
-#if false
+#if true
 // Exercise 3
 // mettre a true si tu veut run cette Exercise sinon mettre a false
 int main(int argc, char *argv[])
