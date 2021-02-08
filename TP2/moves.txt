@@ -1,0 +1,4 @@
+Mr Punchy contre DEF=100
+
+Strength 67
+Earthquake 83

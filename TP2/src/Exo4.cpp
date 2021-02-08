@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
 
-using namespace std; 
+using namespace std;
 
 float mod_vect(int x, int y, int z)
 {
     int Distance = sqrt(x * x + y * y + z * z);
     cout << "La distance de ce point à l'origine est:" << endl
-              << Distance << endl;
+         << Distance << endl;
     return Distance;
 }
 

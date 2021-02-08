@@ -7,8 +7,8 @@ using namespace std;
 int Exo3()
 {
      srand(unsigned(time(nullptr)));
-     double nombreAleatoire =  rand() % 100;
-     cout << "premier nombre aleratoir" << nombreAleatoire << endl; 
+     double nombreAleatoire = rand() % 100;
+     cout << "premier nombre aleratoir" << nombreAleatoire << endl;
      if (nombreAleatoire == 0)
      {
           nombreAleatoire = 0;
@@ -26,4 +26,4 @@ int Exo3()
           << " et la difference entre la valeur reel et l'Approximation est: " << difference
           << endl;
      return 0;
-} 
+}

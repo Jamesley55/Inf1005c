@@ -15,5 +15,5 @@ int Exo1()
      lettreEnMajuscule = char(toupper(prenom[0]));
      prenom.replace(0, 1, lettreEnMajuscule);
      cout << "Bonjour " << prenom << endl;
-     return 0; 
+     return 0;
 }

@@ -27,5 +27,5 @@ int Exo2()
      {
           cout << "Ces deux vecteurs ne sont pas orthogonaux" << endl;
      }
-     return 0; 
+     return 0;
 }
