@@ -12,13 +12,13 @@ using namespace std;
 
 int entreeValide(string chaine, float min, float max)
 {
-    int entree;
+    float entree;
     do
     {
         cout << chaine;
         cin >> entree;
     } while (entree < min || entree > max);
-    return entree;
+    return (int)entree;
 }
 
 int Exo2()
@@ -31,8 +31,9 @@ int Exo2()
     do
     {
         valeurEntree = entreeValide("Entrez un nombre entier : ", 0, interval);
-        valeurEntree < nombreAleatoire ? std::cout << "Trop bas." << std::endl : std::cout << "Trop haut." << std::endl;;
+        valeurEntree < nombreAleatoire ? cout << "Trop bas." << endl : cout << "Trop haut." << endl;
+        ;
         nombreDeTentative++;
     } while (valeurEntree != nombreAleatoire);
-    std::cout << "Bravo! Vous avez reussi! en " << nombreDeTentative << " tentatives!" << endl;
+    cout << "Bravo! Vous avez reussi! en " << nombreDeTentative << " tentatives!" << endl;
 }

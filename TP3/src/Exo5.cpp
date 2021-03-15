@@ -25,7 +25,7 @@ int Exo5()
     Aliment inventaire[nombreDaliment];
     int alimentId = 0;
     const std::string path = "inventaire.txt";
-    std::ifstream fichier(path, std::ios::in);
+    ifstream fichier(path, std::ios::in);
     if (fichier)
     {
         while (!ws(fichier).eof())
