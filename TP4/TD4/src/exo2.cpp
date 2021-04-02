@@ -133,7 +133,7 @@ int bIncludeA(int tableauA[], int tailleTableauA, int tableauB[], int tailleTabl
 
 	return indice;
 }
-int main()
+int Exo2()
 {
 
 	srand(time(0));

@@ -197,7 +197,7 @@ string meilleurPilote(PiloteArray pilotes)
 	return pilotes.pilotes->nom;
 }
 
-int main()
+int Exo1()
 {
 	setlocale(LC_ALL, "");
 	int option = 0;
