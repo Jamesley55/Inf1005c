@@ -31,9 +31,9 @@ using namespace std;
  * \return la dimension d'un morceau
  */
 int lireDimension(string message, int dimensionTotale) {
-	int dimension;
+	int dimension = 80;
 	cout << message <<endl;
-	cin >> dimension;
+	// cin >> dimension;
 	while (dimensionTotale % dimension) {
 		cout << "La taille de l'image, " << dimensionTotale << ", n'est pas divisible par " << dimension << endl;
 		cout << message << endl;
@@ -51,8 +51,8 @@ int main ( )
 	srand(unsigned(time(nullptr)));
 	cout << boolalpha;
 	cout << "Veuillez entrer le nom de l'image a lire: ";
-	string fichierLire;
-	cin >> fichierLire;
+	string fichierLire = "image.bmp";
+	// cin >> fichierLire;
 	bool ok;
 	Image image = lireImage(fichierLire, ok);
 	if (not ok) {
@@ -67,7 +67,7 @@ int main ( )
 
 	image = recomposerImage(imageDecomposee);
 	cout << "Veuillez entrer le nom du fichier a ecrire : ";
-	string fichierEcrire;
+	string fichierEcrire = "fichier.bmp";
 	cin >> fichierEcrire;
 
 	ecrireImage(fichierEcrire, image, ok);
