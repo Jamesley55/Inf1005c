@@ -2,30 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
+            "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "args": [],
+            "program": "${workspaceFolder}/output/main",
+            "args": ["string"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false,
-            "linux": {
-                "MIMode": "gdb",
-                "miDebuggerPath": "gdb",
-                "program": "${workspaceFolder}/output/main"
-            },
-            "osx": {
-                "MIMode": "lldb",
-                "miDebuggerPath": "lldb-mi",
-                "program": "${workspaceFolder}/output/main"
-            },
-            "windows": {
-                "MIMode": "gdb",
-                "miDebuggerPath": "gdb.exe",
-                "program": "${workspaceFolder}/output/main.exe"
-            },
+            "externalConsole": true,
+            "MIMode": "lldb",
             "preLaunchTask": "build"
-        }
+
+        },
     ]
 }
